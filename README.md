@@ -1,7 +1,7 @@
 # gbp-front
 
-<a href="/gbp-front/homepage.html"></a>
-<a href="/gbp-front/finance.html"></a>
-<a href="/gbp-front/communiques.html"></a>
-<a href="/gbp-front/banques-metiers.html"></a>
-<a href="/gbp-front/appel-offres.html"></a>
+https://toshiro94.github.io/gbp-front/homepage.html
+https://toshiro94.github.io/gbp-front/finance.html
+https://toshiro94.github.io/gbp-front/communiques.html
+https://toshiro94.github.io/gbp-front/banques-metiers.html
+https://toshiro94.github.io/gbp-front/appel-offres.html
