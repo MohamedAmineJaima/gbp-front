@@ -1,2 +1,0 @@
-# gbp-front
-
