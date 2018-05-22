@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="assets/css/lib/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="assets/css/lib/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/lib/swipebox.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <title>GBP</title>
 </head>
@@ -204,6 +205,50 @@
 	    <span>
 			<svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>
 		</span>
+	</div>
+
+	<div class="questions d-none">
+		<p class="questions_top">
+			VOUS AVEZ DES QUESTIONS  ?
+		</p>
+		<div class="questions_body">
+			<p>
+				Appelez nous sur
+			</p>
+
+			<p class="num">
+				05 37 77 23 45
+			</p>
+
+			<p>
+				Prix d’un appel local non surtaxé.
+			</p>
+			<p>
+				Disponible 24h/24 - 7/7
+			</p>
+
+			<a class="btn btn--aide mt-1 mb-1" href="#">
+				envoyez nous un message
+			</a>
+
+			<a class="btn btn--aide mb-1" href="#">
+				retrouvez une agence
+			</a>
+
+			<p>
+				On attend vos questions sur
+			</p>
+
+			<p>
+				<a href="#">
+					<svg><use xlink:href="#icon-messenger"></use></svg>	
+				</a>
+				
+				<a href="#">
+					<svg><use xlink:href="#icon-aide-twitter"></use></svg>
+				</a>
+			</p>
+		</div>
 	</div>
 
 	<!-- Appel d'offres -->
@@ -668,12 +713,14 @@
 	</div>
 </div>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<!-- <script type="text/javascript" src="assets/js/lib/jquery-2.1.0.min.js"></script> -->
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ -->
+<script type="text/javascript" src="assets/js/lib/jquery-2.1.0.min.js"></script>
 <script type="text/javascript" src="assets/js/lib/owl.carousel.js"></script>
 <script type="text/javascript" src="assets/js/lib/jquery.mCustomScrollbar.js"></script>
 <script type="text/javascript" src="assets/js/lib/jquery.ellipsis.min.js"></script>
 <script type="text/javascript" src="assets/js/lib/jquery.nice-select.js"></script>
+<script type="text/javascript" src="assets/js/lib/jquery.swipebox.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
 
 <svg style="display:none;">
@@ -748,7 +795,7 @@
 		</symbol>
 
 		<!-- Arrow right -->
-		<symbol id="icon-Tracé-434" viewBox="0 0 18 32">
+		<symbol id="arrow-right" viewBox="0 0 18 32">
 		<title>Tracé-434</title>
 		<path fill="#b9b9b9" style="fill: var(--color1, #b9b9b9)" d="M18.286 16l-16 16-2.286-2.286 13.714-13.714-13.714-13.714 2.286-2.286 7.763 7.763z"></path>
 		</symbol>
@@ -772,6 +819,12 @@
 		<title>twitter</title>
 		<path fill="#55acee" style="fill: var(--color3, #55acee)" d="M31.999 15.999c0 8.836-7.163 15.999-15.999 15.999s-15.999-7.163-15.999-15.999c0-8.836 7.163-15.999 15.999-15.999s15.999 7.163 15.999 15.999z"></path>
 		<path fill="#fff" style="fill: var(--color4, #fff)" d="M25.801 11.5c-0.64 0.291-1.382 0.503-2.16 0.598l-0.037 0.004c0.791-0.479 1.386-1.214 1.675-2.089l0.008-0.027c-0.699 0.422-1.513 0.744-2.38 0.92l-0.049 0.008c-0.7-0.742-1.69-1.204-2.787-1.204-2.115 0-3.829 1.714-3.829 3.829 0 0.307 0.036 0.606 0.104 0.892l-0.005-0.026c-3.186-0.164-5.988-1.678-7.867-3.977l-0.015-0.019c-0.325 0.551-0.518 1.214-0.518 1.922 0 1.321 0.669 2.486 1.688 3.175l0.014 0.009c-0.639-0.020-1.233-0.195-1.751-0.488l0.019 0.010v0.048c0.001 1.844 1.307 3.384 3.044 3.746l0.025 0.004c-0.302 0.085-0.649 0.135-1.007 0.135-0.255 0-0.504-0.025-0.744-0.072l0.024 0.004c0.503 1.532 1.906 2.624 3.569 2.656l0.004 0c-1.296 1.020-2.952 1.636-4.752 1.636-0.323 0-0.641-0.020-0.953-0.058l0.037 0.004c1.659 1.078 3.689 1.719 5.868 1.719 6.006 0 10.876-4.869 10.876-10.876 0-0.002 0-0.004 0-0.006v0c0-0.166 0-0.331-0.011-0.494 0.752-0.547 1.385-1.203 1.891-1.952l0.017-0.027z"></path>
+		</symbol>
+
+		<!-- Play video -->
+		<symbol id="icon-play-button" viewBox="0 0 32 32">
+		<title>play-button</title>
+		<path fill="white" d="M16 0c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16zM24.3 16.441l-11.733 8c-0.090 0.061-0.195 0.093-0.3 0.093-0.085 0-0.171-0.020-0.249-0.062-0.175-0.092-0.284-0.274-0.284-0.471v-16c0-0.198 0.109-0.379 0.284-0.471s0.386-0.080 0.55 0.031l11.733 8c0.145 0.099 0.233 0.264 0.233 0.441s-0.087 0.341-0.233 0.441z"></path>
 		</symbol>
 
     </defs>
