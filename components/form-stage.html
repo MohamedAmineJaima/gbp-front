@@ -1,0 +1,177 @@
+<form name="form-stage" class="form form-stage" method="post" action="" enctype="multipart/form-data">
+    <h3 class="form_title mb-2">
+		Je souhaite postuler pour 
+	</h3>
+    <div class="form_checkboxes clearfix">
+        <label class="form_radio checkbox">
+            Stage PFE
+            <input type="radio" name="stage">
+            <span class="checkmark">
+				</span>
+        </label>
+        <label class="form_radio checkbox">
+            Stage Conventionné
+            <input type="radio" name="stage">
+            <span class="checkmark">
+				</span>
+        </label>
+        <label class="form_radio checkbox">
+            Stage d'observation
+            <input type="radio" name="stage">
+            <span class="checkmark">
+				</span>
+        </label>
+        <label class="form_radio checkbox">
+            Stage
+            <input type="radio" name="stage">
+            <span class="checkmark">
+				</span>
+        </label>
+    </div>
+
+    <h3 class="form_title mb-3 mt-5">
+		Informations personnels & coordoonées
+	</h3>
+
+	<div class="form_infos row mb-5">
+		<div class="input--stage required col-12 col-md-6 mb-2">
+			<label for="">nom</label>
+			<input type="text" name="lastname">
+		</div>
+		<div class="input--stage required col-12 col-md-6 mb-2">
+			<label for="">Prénom</label>
+			<input type="text" name="firstname">
+		</div>
+		<div class="input--stage required col-12 col-md-6 mb-2">
+			<label for="">NUMÉRO DE TÉLÉPHONE</label>
+			<input type="tel" name="tel" minlength="10">
+		</div>
+		<div class="input--stage required col-12 col-md-6 mb-2">
+			<label for="">EMAIL</label>
+			<input type="text" name="email">
+		</div>
+		<div class="input--stage col-12 col-md-6 mb-2">
+			<label for="">DATE  DE NAISSANCE</label>
+			<input type="date" name="birthdate">
+		</div>
+		<div class="input--stage col-12 col-md-6 mb-2">
+			<label for="">ADRESSE</label>
+			<input type="text" name="address">
+		</div>
+	</div>
+
+	<h3 class="form_title mb-3">
+		Formation
+	</h3>
+
+
+	<div class="form_radios clearfix">
+        <label class="form_radio checkbox">
+            Bac +2
+            <input type="radio" name="formation">
+            <span class="checkmark">
+				</span>
+        </label>
+        <label class="form_radio checkbox">
+            Bac +3
+            <input type="radio" name="formation">
+            <span class="checkmark">
+				</span>
+        </label>
+        <label class="form_radio checkbox">
+            Bac +5
+            <input type="radio" name="formation">
+            <span class="checkmark">
+				</span>
+        </label>
+        <label class="form_radio checkbox">
+            Autres
+            <input type="radio" name="formation">
+            <span class="checkmark">
+				</span>
+        </label>
+    </div>
+
+    <div class="input--stage required col-12 mb-5 mt-3 p-0">
+		<label for="">Type de formation</label>
+		<input type="text" name="type-formation">
+	</div>
+
+
+	<h3 class="form_title mb-3">
+		Services concernés
+	</h3>
+
+	<div class="form_radios clearfix">
+        <label class="form_radio checkbox">
+            Service 1
+            <input type="radio" name="service">
+            <span class="checkmark">
+				</span>
+        </label>
+        <label class="form_radio checkbox">
+            Service 2
+            <input type="radio" name="service">
+            <span class="checkmark">
+				</span>
+        </label>
+        <label class="form_radio checkbox">
+            Service 3
+            <input type="radio" name="service">
+            <span class="checkmark">
+				</span>
+        </label>
+        <label class="form_radio checkbox">
+            Service 4
+            <input type="radio" name="service">
+            <span class="checkmark">
+				</span>
+        </label>
+    </div>
+
+    <h3 class="form_title mb-3 mt-3">
+		Documents
+	</h3>
+
+    <div class="form_drop">
+        <svg>
+            <use xlink:href="#icon-drag-drop"></use> 
+        </svg>
+        <h5 class="title">
+            Glissez déposez vos documents
+        </h5>
+        <p class="small">
+            ou
+        </p>
+        <input type="file" class="d-none" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple>
+
+        <label for="file" class="btn btn--drag mb-7">
+            TÉLÉCHARGER DEPUIS TON ORDINATEUR
+        </label>
+            
+    </div>
+
+	<p class="form_notice mb-4">
+		Conformément à la loi 09-08, vous disposez d’un droit d’accès, de rectification et 
+		d’opposition au traitement de vos données personnelles 
+	</p>	
+
+
+	<label class="form_radio form_radio-lg checkbox">
+		<span>
+			J’ai lu et j’accepte les conditions générales d’utilisation, notamment la mention relative à la protection des données personnelles.
+		</span>
+        
+        <input type="checkbox" name="conditions" required>
+        <span class="checkmark">
+		</span>
+    </label>
+
+    <div class="text-center mt-5">
+    	<button type="submit" class="btn btn--primary btn--orange text-uppercase">
+    		envoyer ma candidature
+    	</button>
+    </div>
+
+
+</form>
