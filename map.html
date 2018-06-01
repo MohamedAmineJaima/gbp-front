@@ -20,8 +20,8 @@
 	    <div class="top-header_list">
 	        <nav>
 	            <ul class="clearfix">
-	                <li>
-	                    <a href="#" class="top-header_logo">
+	                <li class="top-header_logo">
+	                    <a href="#">
 	                        <img src="assets/img/logo-gbp-reverse.svg" alt="">
 	                    </a>
 	                </li>
@@ -50,7 +50,7 @@
 	                        </li>
 	                    </ul>
 	                </li>
-	                <li>
+	                <li class="list--tohide">
 	                    <a href="/gbp-front/appel-offres.html">
 	                        Appel D'offres
 	                    </a>
@@ -158,14 +158,138 @@
 		      <button class="btn btn--tag" data-value=" ">RÉSEAU À L’ÉTRANGER</button>
 		    </div>
 		  </div>
-		  <div id="suggestions-container" class="mapcontrol_suggestions">
-		    <div class="suggestions_element suggestions_element--head">
+		  <div id="suggestions-container" class="mapcontrol_suggestions ">
+		    <div class="suggestions_element--head">
 		      <h3>Nos agences à
 		        <strong class="special" id="inputed-search"></strong>
 		      </h3>
 		      <span id="search-result"></span>
 		    </div>
 		    <div id="suggestions-holder" class="suggestions_body">
+		    </div>
+		  </div>
+		  <div id="selected-container" class="mapcontrol_suggestions moreinfo">
+		    <div class="moreinfo_content">
+		      <div class="moreinfo_head">
+		        <h3 class="moreinfo_title" id="info-name">GAB Casa-port</h3>
+		        <p class="moreinfo_address" id="info-address">1100, BD. AL QODS, NIARSHORE PARK SIDI MAAROUF CASABLANCA</p>
+		        <div class="moreinfo_actions">
+		          <a href="#">GÉNÉRER UN ITINÉRAIRE</a>
+		          <a href="#" id="selected-container--close">RETOURNER</a>
+		        </div>
+		      </div>
+		      <div class="moreinfo_body">
+		        <div class="moreinfo_section">
+		          <h4>Coordonnées</h4>
+		          <div class="moreinfo_list">
+		            <div class="moreinfo_list-item">
+		              <div class="left">
+		                <span>Email</span>
+		              </div>
+		              <div class="right">
+		                <span id="info-email">al-bouchra@gbp.com</span>
+		              </div>
+		            </div>
+		            <div class="moreinfo_list-item">
+		              <div class="left">
+		                <span>Téléphone</span>
+		              </div>
+		              <div class="right">
+		                <span id="info-phone">0520378080</span>
+		              </div>
+		            </div>
+		            <div class="moreinfo_list-item">
+		              <div class="left">
+		                <span>Fax</span>
+		              </div>
+		              <div class="right">
+		                <span id="info-fax">0520378082</span>
+		              </div>
+		            </div>
+		            <div class="moreinfo_list-item">
+		              <div class="left">
+		                <span>Coords GPS</span>
+		              </div>
+		              <div class="right">
+		                <span>
+		                  <bold>
+		                    Latitude
+		                  </bold> : 48.862725 |
+		                  <bold>
+		                    Longitude
+		                  </bold> : 2.287592</span>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="moreinfo_section">
+		          <h4>Agence liée</h4>
+		          <div class="moreinfo_container">
+		            <h5>Al-bouchra Casanearshore</h5>
+		            <p class="moreinfo_address">1100, BD. AL QODS, NIARSHORE PARK SIDI MAAROUF CASABLANCA</p>
+		          </div>
+		        </div>
+		        <div class="moreinfo_section">
+		          <div class="moreinfo_list">
+		            <div class="moreinfo_list-item">
+		              <div class="left">
+		                <span>Lundi</span>
+		              </div>
+		              <div class="right">
+		                <span>08:05-12:05 | 14:00-17:15</span>
+		              </div>
+		            </div>
+		            <div class="moreinfo_list-item">
+		              <div class="left">
+		                <span>Mardi</span>
+		              </div>
+		              <div class="right">
+		                <span>08:05-12:05 | 14:00-17:15</span>
+		              </div>
+		            </div>
+		            <div class="moreinfo_list-item">
+		              <div class="left">
+		                <span>Mercredi</span>
+		              </div>
+		              <div class="right">
+		                <span>08:05-12:05 | 14:00-17:15</span>
+		              </div>
+		            </div>
+		            <div class="moreinfo_list-item">
+		              <div class="left">
+		                <span>Jeudi</span>
+		              </div>
+		              <div class="right">
+		                <span>08:05-12:05 | 14:00-17:15</span>
+		              </div>
+		            </div>
+		            <div class="moreinfo_list-item">
+		              <div class="left">
+		                <span>Vendredi</span>
+		              </div>
+		              <div class="right">
+		                <span>08:05-12:05 | 14:00-17:15</span>
+		              </div>
+		            </div>
+		            <div class="moreinfo_list-item">
+		              <div class="left">
+		                <span>Samedi</span>
+		              </div>
+		              <div class="right">
+		                <span>08:05-12:05 | 14:00-17:15</span>
+		              </div>
+		            </div>
+		            <div class="moreinfo_list-item">
+		              <div class="left">
+		                <span>Lundi</span>
+		              </div>
+		              <div class="right">
+		                <span>08:05-12:05 | 14:00-17:15</span>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
 		    </div>
 		  </div>
 		  <div class="mapcontrol_toggle">
