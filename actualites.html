@@ -283,9 +283,6 @@
 		<div class="container">
 			<div class="wrapper d-flex flex-wrap align-items-center justify-content-between pt-3 pb-4">
 				<div class="tags" id="actualite-filters">
-					<a href="/gbp-front/actualites.html" class="btn btn--tag active mb-s mr-s">
-						TOUT
-					</a>
 					<a href="/gbp-front/actualites.html" class="btn btn--tag mb-s mr-s">
 						#RSE
 					</a>
@@ -299,665 +296,78 @@
 						#FINANCE
 					</a>
 				</div>
-
-				<div class="select-filter d-flex align-items-center clearfix">
-					<span class="title title--filter">
-						Filtrez par
-					</span>
-					<select class="nice-select text-orange">
-						<option>Période</option>
-						<option>option</option>
-					</select>
-				</div>
-			</div>
-
-			<div class="date-filter clearfix d-flex align-items-center">
-				<p class="date-filter_txt float-left">
-					Du
-				</p>
-				<div class="start clearfix">
-					<div class="date-filter_arrows">
-						<a href="#">
-							<svg>
-								<use xlink:href="#arrow-right"></use>	
-							</svg>
-						</a>
-						<a href="#">
-							<svg>
-								<use xlink:href="#arrow-right"></use>	
-							</svg>
-						</a>
+				<div>
+					<div class="select-filter d-flex align-items-center justify-content-end clearfix">
+						<span class="title title--filter">
+							Filtrez par
+						</span>
+						<select class="nice-select text-orange" id="actualite-select-filter">
+							<option>Période</option>
+							<option>Plus récents</option>
+							<option>Plus anciens</option>
+						</select>
 					</div>
-					<p class="date-filter_month">
-						<input type="text" value="06">
-					</p>
-					<p class="date-filter_year">
-						<input type="text" value="17">
-					</p>
-				</div>
-
-				<p class="date-filter_txt float-left">
-					Au
-				</p>
-
-				<div class="end clearfix">
-					<div class="date-filter_arrows">
-						<a href="#">
-							<svg>
-								<use xlink:href="#arrow-right"></use>	
-							</svg>
-						</a>
-						<a href="#">
-							<svg>
-								<use xlink:href="#arrow-right"></use>	
-							</svg>
-						</a>
-					</div>
-					<p class="date-filter_month">
-						<input type="text" value="06">
-					</p>
-					<p class="date-filter_year">
-						<input type="text" value="17">
-					</p>
-				</div>
-			</div>
-
-			<div class="pt-5 pb-4">
-				<div id="actualite-holder" class="row mb-4">
-					<div class="col-12 col-lg-8 mb-2">
-						<div class="card card--actualites card--actualites-img clearfix">
-						    <a class="img-wrapper" href="/gbp-front/news-detail.html">
-						        <img src="assets/img/actu-1.png" alt="">
-						    </a>
-						    <div class="wrapper">
-						        <div class="card_tags">
-						            <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-										#RSE
-									</a>
-						        </div>
-						        <p class="card_date">
-						            21/07/2017
-						        </p>
-						        <a class="card_title" href="/gbp-front/news-detail.html">
-									Nzaha@Bladi Montréal 2017 : 
-									une édition spéciale 
-									« millionième client MDM »
+					<div class="date-filter clearfix d-flex align-items-center" id="date-filter">
+						<p class="date-filter_txt float-left">
+							Du
+						</p>
+						<div class="start clearfix">
+							<div class="date-filter_arrows">
+								<a href="#" class="increment-date">
+									<svg>
+										<use xlink:href="#arrow-right"></use>
+									</svg>
 								</a>
-						        <p class="card_desc">
-						            C’est dans une ambiance festive et familiale que s’est déroulé le festival Nzaha@Bladi
-						        </p>
-						        <div class="clearfix position-relative">
-						            <a class="card_link" href="/gbp-front/news-detail.html">
-										en savoir plus
-									</a>
-						            <a class="card_share" href="#">
-						                <svg>
-						                    <use xlink:href="#icon-share-symbol"></use>
-						                </svg>
-						            </a>
-						            <ul class="share">
-						                <li>
-						                    <a href="https://www.facebook.com/share.php?u=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="fb">
-						                            <use xlink:href="#icon-facebook"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://twitter.com/intent/tweet?text=text-partage&amp;url=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="twitter">
-						                            <use xlink:href="#icon-twitter"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://plus.google.com/share?url=https://plus.google.com">
-						                        <svg>
-						                            <use xlink:href="#icon-google-plus"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://api.whatsapp.com/send?text=text-whatsapp&amp;url=">
-						                        <svg>
-						                            <use xlink:href="#icon-whatsapp"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						            </ul>
-						        </div>
-						    </div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-4 mb-2">
-						<div class="card card--actualites">
-						    <div class="card_tags">
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#DEVELOPPEMENT DURABLE
+								<a href="#" class="decrement-date">
+									<svg>
+										<use xlink:href="#arrow-right"></use>
+									</svg>
 								</a>
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#RSE
-								</a>
-						    </div>
-						    <p class="card_date">
-						        21/07/2017
-						    </p>
-						    <a class="card_title" href="/gbp-front/news-detail.html">
-								Transformation digitale de la 
-								Banque Populaire : une vision 
-								stratégique au..
-							</a>
-						    <p class="card_desc">
-						        Consciente des enjeux stratégiques que présente le numérique, la Banque Populaire a entamé depuis deux ans, un large chant...
-						    </p>
-						    <div class="clearfix position-relative">
-						        <a class="card_link" href="/gbp-front/news-detail.html">
-									en savoir plus
-								</a>
-						        <a class="card_share" href="/dist/news-detail.html">
-						            <svg>
-						                <use xlink:href="#icon-share-symbol"></use>
-						            </svg>
-						        </a>
-						        <ul class="share">
-						                <li>
-						                    <a href="https://www.facebook.com/share.php?u=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="fb">
-						                            <use xlink:href="#icon-facebook"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://twitter.com/intent/tweet?text=text-partage&amp;url=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="twitter">
-						                            <use xlink:href="#icon-twitter"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://plus.google.com/share?url=https://plus.google.com">
-						                        <svg>
-						                            <use xlink:href="#icon-google-plus"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://api.whatsapp.com/send?text=text-whatsapp&amp;url=">
-						                        <svg>
-						                            <use xlink:href="#icon-whatsapp"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						            </ul>
-						    </div>
-						</div>
-					</div>
-
-
-					<div class="col-12 col-lg-4 mb-2">
-						<div class="card card--actualites">
-						    <div class="card_tags">
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#DEVELOPPEMENT DURABLE
-								</a>
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#RSE
-								</a>
-						    </div>
-						    <p class="card_date">
-						        21/07/2017
-						    </p>
-						    <a class="card_title" href="/gbp-front/news-detail.html">
-								Transformation digitale de la 
-								Banque Populaire : une vision 
-								stratégique au..
-							</a>
-						    <p class="card_desc">
-						        Consciente des enjeux stratégiques que présente le numérique, la Banque Populaire a entamé depuis deux ans, un large chant...
-						    </p>
-						    <div class="clearfix position-relative">
-						        <a class="card_link" href="/gbp-front/news-detail.html">
-									en savoir plus
-								</a>
-						        <a class="card_share" href="/dist/news-detail.html">
-						            <svg>
-						                <use xlink:href="#icon-share-symbol"></use>
-						            </svg>
-						        </a>
-						        <ul class="share">
-						                <li>
-						                    <a href="https://www.facebook.com/share.php?u=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="fb">
-						                            <use xlink:href="#icon-facebook"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://twitter.com/intent/tweet?text=text-partage&amp;url=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="twitter">
-						                            <use xlink:href="#icon-twitter"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://plus.google.com/share?url=https://plus.google.com">
-						                        <svg>
-						                            <use xlink:href="#icon-google-plus"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://api.whatsapp.com/send?text=text-whatsapp&amp;url=">
-						                        <svg>
-						                            <use xlink:href="#icon-whatsapp"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						            </ul>
-						    </div>
-						</div>
-					</div>
-
-					<div class="col-12 col-lg-8 mb-2">
-						<div class="card card--actualites card--actualites-img clearfix">
-							<a class="img-wrapper" href="/gbp-front/news-detail.html">
-								<img src="assets/img/actu-2.png" alt="">
-							</a>
-
-							<div class="wrapper">
-								<div class="card_tags">
-									<a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-										#RSE
-									</a>
-								</div>
-								<p class="card_date">
-									21/07/2017
-								</p>
-								<a class="card_title" href="/gbp-front/news-detail.html">
-									Nzaha@Bladi Montréal 2017 : une édition spéciale « millionième client MDM »
-								</a>
-								<p class="card_desc">
-									C’est dans une ambiance festive et familiale que s’est déroulé le festival Nzaha@Bladi
-								</p>
-								<div class="clearfix position-relative">
-									<a class="card_link" href="/gbp-front/news-detail.html">
-										en savoir plus
-									</a>
-									<a class="card_share" href="#">
-										<svg>
-											<use xlink:href="#icon-share-symbol"></use>
-										</svg>
-									</a>
-									<ul class="share">
-										<li>
-											<a href="https://www.facebook.com/share.php?u=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-												<svg class="fb">
-													<use xlink:href="#icon-facebook"></use>
-												</svg>
-											</a>
-										</li>
-										<li>
-											<a href="https://twitter.com/intent/tweet?text=text-partage&amp;url=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-												<svg class="twitter">
-													<use xlink:href="#icon-twitter"></use>
-												</svg>
-											</a>
-										</li>
-										<li>
-											<a href="https://plus.google.com/share?url=https://plus.google.com">
-												<svg>
-													<use xlink:href="#icon-google-plus"></use>
-												</svg>
-											</a>
-										</li>
-										<li>
-											<a href="https://api.whatsapp.com/send?text=text-whatsapp&amp;url=">
-												<svg>
-													<use xlink:href="#icon-whatsapp"></use>
-												</svg>
-											</a>
-										</li>
-									</ul>
-								</div>
 							</div>
-						</div>
-					</div>
-
-					<div class="col-12 col-lg-4 mb-2">
-						<div class="card card--actualites">
-						    <div class="card_tags">
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#DEVELOPPEMENT DURABLE
-								</a>
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#RSE
-								</a>
-						    </div>
-						    <p class="card_date">
-						        21/07/2017
-						    </p>
-						    <a class="card_title" href="/gbp-front/news-detail.html">
-								Transformation digitale de la 
-								Banque Populaire : une vision 
-								stratégique au..
-							</a>
-						    <p class="card_desc">
-						        Consciente des enjeux stratégiques que présente le numérique, la Banque Populaire a entamé depuis deux ans, un large chant...
-						    </p>
-						    <div class="clearfix position-relative">
-						        <a class="card_link" href="/gbp-front/news-detail.html">
-									en savoir plus
-								</a>
-						        <a class="card_share" href="/dist/news-detail.html">
-						            <svg>
-						                <use xlink:href="#icon-share-symbol"></use>
-						            </svg>
-						        </a>
-						        <ul class="share">
-						                <li>
-						                    <a href="https://www.facebook.com/share.php?u=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="fb">
-						                            <use xlink:href="#icon-facebook"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://twitter.com/intent/tweet?text=text-partage&amp;url=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="twitter">
-						                            <use xlink:href="#icon-twitter"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://plus.google.com/share?url=https://plus.google.com">
-						                        <svg>
-						                            <use xlink:href="#icon-google-plus"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://api.whatsapp.com/send?text=text-whatsapp&amp;url=">
-						                        <svg>
-						                            <use xlink:href="#icon-whatsapp"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						            </ul>
-						    </div>
-						</div>
-					</div>
-
-					<div class="col-12 col-lg-4 mb-2">
-						<div class="card card--actualites card--actualites-annonce">
-							<img src="assets/img/twitter.png" alt="">
-							<p class="card_desc">
-								A l’occasion de la Journée Internationale de la Femme, la <a href="https://twitter.com/hashtag/Banque_Populaire" target="_blank">#Banque_Populaire</a> présente à toutes les femmes ses vœux les plus sincères de réussite et de prospérité. <a href="https://twitter.com/hashtag/8mars"  target="_blank">#8mars</a> <a href="https://twitter.com/hashtag/corpo"  target="_blank">#corpo</a>
+							<p class="date-filter_month">
+								<input type="text" placeholder="--">
 							</p>
-							<a class="card_link" href="http://www.twitter.com/BP_Maroc" target="_blank">
-								Twitter.com/BP_Maroc
-							</a>
+							<p class="date-filter_year">
+								<input type="text" placeholder="----">
+							</p>
 						</div>
-					</div>
 
-					<div class="col-12 col-lg-4 mb-2">
-						<div class="card card--actualites">
-						    <div class="card_tags">
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#DEVELOPPEMENT DURABLE
-								</a>
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#RSE
-								</a>
-						    </div>
-						    <p class="card_date">
-						        21/07/2017
-						    </p>
-						    <a class="card_title" href="/gbp-front/news-detail.html">
-								Transformation digitale de la 
-								Banque Populaire : une vision 
-								stratégique au..
-							</a>
-						    <p class="card_desc">
-						        Consciente des enjeux stratégiques que présente le numérique, la Banque Populaire a entamé depuis deux ans, un large chant...
-						    </p>
-						    <div class="clearfix position-relative">
-						        <a class="card_link" href="/gbp-front/news-detail.html">
-									en savoir plus
-								</a>
-						        <a class="card_share" href="/dist/news-detail.html">
-						            <svg>
-						                <use xlink:href="#icon-share-symbol"></use>
-						            </svg>
-						        </a>
-						        <ul class="share">
-						                <li>
-						                    <a href="https://www.facebook.com/share.php?u=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="fb">
-						                            <use xlink:href="#icon-facebook"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://twitter.com/intent/tweet?text=text-partage&amp;url=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="twitter">
-						                            <use xlink:href="#icon-twitter"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://plus.google.com/share?url=https://plus.google.com">
-						                        <svg>
-						                            <use xlink:href="#icon-google-plus"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://api.whatsapp.com/send?text=text-whatsapp&amp;url=">
-						                        <svg>
-						                            <use xlink:href="#icon-whatsapp"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						            </ul>
-						    </div>
-						</div>
-					</div>
+						<p class="date-filter_txt float-left">
+							Au
+						</p>
 
-					<div class="col-12 col-lg-4 mb-2">
-						<div class="card card--actualites">
-						    <div class="card_tags">
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#DEVELOPPEMENT DURABLE
+						<div class="end clearfix">
+							<div class="date-filter_arrows">
+								<a href="#" class="increment-date">
+									<svg>
+										<use xlink:href="#arrow-right"></use>
+									</svg>
 								</a>
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#RSE
+								<a href="#" class="decrement-date">
+									<svg>
+										<use xlink:href="#arrow-right"></use>
+									</svg>
 								</a>
-						    </div>
-						    <p class="card_date">
-						        21/07/2017
-						    </p>
-						    <a class="card_title" href="/gbp-front/news-detail.html">
-								Transformation digitale de la 
-								Banque Populaire : une vision 
-								stratégique au..
-							</a>
-						    <p class="card_desc">
-						        Consciente des enjeux stratégiques que présente le numérique, la Banque Populaire a entamé depuis deux ans, un large chant...
-						    </p>
-						    <div class="clearfix position-relative">
-						        <a class="card_link" href="/gbp-front/news-detail.html">
-									en savoir plus
-								</a>
-						        <a class="card_share" href="/dist/news-detail.html">
-						            <svg>
-						                <use xlink:href="#icon-share-symbol"></use>
-						            </svg>
-						        </a>
-						        <ul class="share">
-						                <li>
-						                    <a href="https://www.facebook.com/share.php?u=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="fb">
-						                            <use xlink:href="#icon-facebook"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://twitter.com/intent/tweet?text=text-partage&amp;url=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="twitter">
-						                            <use xlink:href="#icon-twitter"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://plus.google.com/share?url=https://plus.google.com">
-						                        <svg>
-						                            <use xlink:href="#icon-google-plus"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://api.whatsapp.com/send?text=text-whatsapp&amp;url=">
-						                        <svg>
-						                            <use xlink:href="#icon-whatsapp"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						            </ul>
-						    </div>
+							</div>
+							<p class="date-filter_month">
+								<input type="text" placeholder="--">
+							</p>
+							<p class="date-filter_year">
+								<input type="text" placeholder="----">
+							</p>
 						</div>
 					</div>
+				</div>
+			</div>
 
-					<div class="col-12 col-lg-4 mb-2">
-						<div class="card card--actualites">
-						    <div class="card_tags">
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#DEVELOPPEMENT DURABLE
-								</a>
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#RSE
-								</a>
-						    </div>
-						    <p class="card_date">
-						        21/07/2017
-						    </p>
-						    <a class="card_title" href="/gbp-front/news-detail.html">
-								Transformation digitale de la 
-								Banque Populaire : une vision 
-								stratégique au..
-							</a>
-						    <p class="card_desc">
-						        Consciente des enjeux stratégiques que présente le numérique, la Banque Populaire a entamé depuis deux ans, un large chant...
-						    </p>
-						    <div class="clearfix position-relative">
-						        <a class="card_link" href="/gbp-front/news-detail.html">
-									en savoir plus
-								</a>
-						        <a class="card_share" href="/dist/news-detail.html">
-						            <svg>
-						                <use xlink:href="#icon-share-symbol"></use>
-						            </svg>
-						        </a>
-						        <ul class="share">
-						                <li>
-						                    <a href="https://www.facebook.com/share.php?u=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="fb">
-						                            <use xlink:href="#icon-facebook"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://twitter.com/intent/tweet?text=text-partage&amp;url=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="twitter">
-						                            <use xlink:href="#icon-twitter"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://plus.google.com/share?url=https://plus.google.com">
-						                        <svg>
-						                            <use xlink:href="#icon-google-plus"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://api.whatsapp.com/send?text=text-whatsapp&amp;url=">
-						                        <svg>
-						                            <use xlink:href="#icon-whatsapp"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						            </ul>
-						    </div>
-						</div>
-					</div>
 
-					<div class="col-12 col-lg-4 mb-2">
-						<div class="card card--actualites">
-						    <div class="card_tags">
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#DEVELOPPEMENT DURABLE
-								</a>
-						        <a class="btn btn--tag btn--orange" href="/gbp-front/actualites.html">
-									#RSE
-								</a>
-						    </div>
-						    <p class="card_date">
-						        21/07/2017
-						    </p>
-						    <a class="card_title" href="/gbp-front/news-detail.html">
-								Transformation digitale de la 
-								Banque Populaire : une vision 
-								stratégique au..
-							</a>
-						    <p class="card_desc">
-						        Consciente des enjeux stratégiques que présente le numérique, la Banque Populaire a entamé depuis deux ans, un large chant...
-						    </p>
-						    <div class="clearfix position-relative">
-						        <a class="card_link" href="/gbp-front/news-detail.html">
-									en savoir plus
-								</a>
-						        <a class="card_share" href="/dist/news-detail.html">
-						            <svg>
-						                <use xlink:href="#icon-share-symbol"></use>
-						            </svg>
-						        </a>
-						        <ul class="share">
-						                <li>
-						                    <a href="https://www.facebook.com/share.php?u=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="fb">
-						                            <use xlink:href="#icon-facebook"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://twitter.com/intent/tweet?text=text-partage&amp;url=" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-						                        <svg class="twitter">
-						                            <use xlink:href="#icon-twitter"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://plus.google.com/share?url=https://plus.google.com">
-						                        <svg>
-						                            <use xlink:href="#icon-google-plus"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						                <li>
-						                    <a href="https://api.whatsapp.com/send?text=text-whatsapp&amp;url=">
-						                        <svg>
-						                            <use xlink:href="#icon-whatsapp"></use>
-						                        </svg>
-						                    </a>
-						                </li>
-						            </ul>
-						    </div>
-						</div>
-					</div>
+			<div class="pb-4">
+				<div id="actualite-holder" class="row mb-4">
+
 				</div>
 
 				<div class="pb-6 text-center">
-					<a href="#" class="btn btn--orange btn--primary btn--plus btn--afficher text-uppercase">
+					<a href="#" id="more-actualite" class="btn btn--orange btn--primary btn--plus btn--afficher text-uppercase">
 						afficher plus
 					</a>
 				</div>
