@@ -14,6 +14,7 @@
 <body>
 
 <div class="page-content">
+	<!-- Top Header -->
 	<div class="top-header clearfix">
 	    <div class="top-header_list">
 	        <nav>
@@ -116,6 +117,8 @@
 	        </nav>
 	    </div>
 	</div>
+
+	<!-- Header -->
 	<div class="header clearfix">
 		<div class="header_mobile-menu">
 			<span>
@@ -191,51 +194,52 @@
 	<div class="header-section">
 		<img src="assets/img/appel-offre.png" alt="">
 		<div class="wrapper-absolute">
-	        <div class="container">
-		        <h1 class="header-section_title">
+			<div class="container">
+				<h1 class="header-section_title">
 					Communiqués
 				</h1>
-		        <p class="header-section_desc">
-		            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh tortor, viverra placerat luctus id, aliquet at nibh. Vivamus massa nibh, luctus id vestibulum in, pulvinar vitae nisl.
-		        </p>
-		    </div>
-	    </div>    
+				<p class="header-section_desc">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh tortor, viverra placerat luctus id, aliquet at nibh.
+					Vivamus massa nibh, luctus id vestibulum in, pulvinar vitae nisl.
+				</p>
+			</div>
+		</div>
 	</div>
 
 	<!-- Fil d'ariane -->
 
 	<div class="fil-ariane">
-	<div class="container">
-		<ul class="items clearfix">
-			<li class="item">
-				Vous êtes ici :
-			</li>
-			<li class="item">
-				<a href="/gbp-front/homepage.html">
-					Accueil
-				</a>
-			</li>
-			<li class="item">
-				<a href="/gbp-front/homepage.html">
-					Corporate
-				</a>
-			</li>
-			<li class="item">
-				<a href="/gbp-front/mediacenter.html">
-					Media center
-				</a>
-			</li>
-			<li class="item">
-				<a href="/gbp-front/mediacenter.html">
-					Espace communication
-				</a>
-			</li>
-			<li class="item">
-				Gallery
-			</li>
-		</ul>
+		<div class="container">
+			<ul class="items clearfix">
+				<li class="item">
+					Vous êtes ici :
+				</li>
+				<li class="item">
+					<a href="/gbp-front/homepage.html">
+						Accueil
+					</a>
+				</li>
+				<li class="item">
+					<a href="/gbp-front/homepage.html">
+						Corporate
+					</a>
+				</li>
+				<li class="item">
+					<a href="/gbp-front/mediacenter.html">
+						Media center
+					</a>
+				</li>
+				<li class="item">
+					<a href="/gbp-front/mediacenter.html">
+						Espace communication
+					</a>
+				</li>
+				<li class="item">
+					Gallery
+				</li>
+			</ul>
+		</div>
 	</div>
-</div>
 
 	<div class="besoin-aide">
 	    <span>
@@ -294,178 +298,243 @@
 
 	<div class="bg-gray pb-6">
 		<div class="container">
-		
+
 			<div class="wrapper d-flex flex-wrap align-items-center justify-content-between pt-3 pb-4">
 				<div class="tags">
-					<a href="#" class="btn btn--tag active mb-s mr-s">
+					<a href="#" class="btn btn--tag mb-s mr-s active" id="communiques-filter-all">
 						TOUT
 					</a>
-					<a href="#" class="btn btn--tag mb-s mr-s">
-						#INSTITUTIONNELLE
-					</a>
-					<a href="#" class="btn btn--tag mb-s mr-s">
-						#MAROCAINS DU MONDE
-					</a>
-					<a href="#" class="btn btn--tag mb-s mr-s">
-						#PROFESSIONNELS
-					</a>
-					<a href="#" class="btn btn--tag mb-s mr-s">
-						#PARTICULIERS
-					</a>
-					<a href="#" class="btn btn--tag mb-s mr-s">
-						#ENTREPRISES
-					</a>				
+					<div style="display: inline" id="communiques-filters">
+						<a href="#" class="btn btn--tag mb-s mr-s">
+							#RSE
+						</a>
+						<a href="#" class="btn btn--tag mb-s mr-s">
+							#DEVELOPPEMENT DURABLE
+						</a>
+						<a href="#" class="btn btn--tag mb-s mr-s">
+							#ENTREPRENARIAT
+						</a>
+						<a href="#" class="btn btn--tag mb-s mr-s">
+							#FINANCE
+						</a>
+					</div>
 				</div>
+				<div>
+					<div class="select-filter d-flex align-items-center justify-content-end clearfix">
+						<span class="title title--filter">
+							Filtrez par
+						</span>
+						<select class="nice-select text-orange" id="communiques-select-filter">
+							<option>Période</option>
+							<option>Plus récents</option>
+							<option>Plus anciens</option>
+						</select>
+					</div>
+					<div class="date-filter clearfix d-flex align-items-center" id="date-filter">
+						<p class="date-filter_txt float-left">
+							Du
+						</p>
+						<div class="start clearfix">
+							<div class="date-filter_arrows">
+								<a href="#" class="increment-date">
+									<svg>
+										<use xlink:href="#arrow-right"></use>
+									</svg>
+								</a>
+								<a href="#" class="decrement-date">
+									<svg>
+										<use xlink:href="#arrow-right"></use>
+									</svg>
+								</a>
+							</div>
+							<p class="date-filter_month">
+								<input type="text" placeholder="--">
+							</p>
+							<p class="date-filter_year">
+								<input type="text" placeholder="----">
+							</p>
+						</div>
 
-				<div class="select-filter d-flex align-items-center clearfix">
-					<span class="title title--filter">
-						Filtrez par
-					</span>
-					<select class="nice-select text-orange">
-						<option>Plus récents</option>
-						<option>option</option>
-					</select>
+						<p class="date-filter_txt float-left">
+							Au
+						</p>
+
+						<div class="end clearfix">
+							<div class="date-filter_arrows">
+								<a href="#" class="increment-date">
+									<svg>
+										<use xlink:href="#arrow-right"></use>
+									</svg>
+								</a>
+								<a href="#" class="decrement-date">
+									<svg>
+										<use xlink:href="#arrow-right"></use>
+									</svg>
+								</a>
+							</div>
+							<p class="date-filter_month">
+								<input type="text" placeholder="--">
+							</p>
+							<p class="date-filter_year">
+								<input type="text" placeholder="----">
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
-			
-	
-			
-			<a class="news news--communiques" href="#">
-				<div class="news_border">
-					<svg class="icon-pdf"><use xlink:href="#icon-pdf"></use></svg>
-					<p>
-						Télécharger
-					</p>
-				</div>
-				<div class="news_content">
-					<div class="news_date clearfix">
-						<p class="publication">
-							20/07/2017
+			<div id="communiques-holder">
+
+				<a class="news news--communiques" href="#">
+					<div class="news_border">
+						<svg class="icon-pdf">
+							<use xlink:href="#icon-pdf"></use>
+						</svg>
+						<p>
+							Télécharger
 						</p>
 					</div>
-					<h2 class="news_title">
-						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
-					</h2>
-					<p class="news_txt">
-						.PDF - 364 KB
-					</p>
-				</div>
-			</a>
-
-			<a class="news news--communiques" href="#">
-				<div class="news_border">
-					<svg class="icon-pdf"><use xlink:href="#icon-pdf"></use></svg>
-					<p>
-						Télécharger
-					</p>
-				</div>
-				<div class="news_content">
-					<div class="news_date clearfix">
-						<p class="publication">
-							20/07/2017
+					<div class="news_content">
+						<div class="news_date clearfix">
+							<p class="publication">
+								20/07/2017
+							</p>
+						</div>
+						<h2 class="news_title">
+							Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
+						</h2>
+						<p class="news_txt">
+							.PDF - 364 KB
 						</p>
 					</div>
-					<h2 class="news_title">
-						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
-					</h2>
-					<p class="news_txt">
-						.PDF - 364 KB
-					</p>
-				</div>
-			</a>
+				</a>
 
-			<a class="news news--communiques" href="#">
-				<div class="news_border">
-					<svg class="icon-pdf"><use xlink:href="#icon-pdf"></use></svg>
-					<p>
-						Télécharger
-					</p>
-				</div>
-				<div class="news_content">
-					<div class="news_date clearfix">
-						<p class="publication">
-							20/07/2017
+				<a class="news news--communiques" href="#">
+					<div class="news_border">
+						<svg class="icon-pdf">
+							<use xlink:href="#icon-pdf"></use>
+						</svg>
+						<p>
+							Télécharger
 						</p>
 					</div>
-					<h2 class="news_title">
-						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
-					</h2>
-					<p class="news_txt">
-						.PDF - 364 KB
-					</p>
-				</div>
-			</a>
-
-
-			<a class="news news--communiques" href="#">
-				<div class="news_border">
-					<svg class="icon-pdf"><use xlink:href="#icon-pdf"></use></svg>
-					<p>
-						Télécharger
-					</p>
-				</div>
-				<div class="news_content">
-					<div class="news_date clearfix">
-						<p class="publication">
-							20/07/2017
+					<div class="news_content">
+						<div class="news_date clearfix">
+							<p class="publication">
+								20/07/2017
+							</p>
+						</div>
+						<h2 class="news_title">
+							Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
+						</h2>
+						<p class="news_txt">
+							.PDF - 364 KB
 						</p>
 					</div>
-					<h2 class="news_title">
-						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
-					</h2>
-					<p class="news_txt">
-						.PDF - 364 KB
-					</p>
-				</div>
-			</a>
+				</a>
 
-			<a class="news news--communiques" href="#">
-				<div class="news_border">
-					<svg class="icon-pdf"><use xlink:href="#icon-pdf"></use></svg>
-					<p>
-						Télécharger
-					</p>
-				</div>
-				<div class="news_content">
-					<div class="news_date clearfix">
-						<p class="publication">
-							20/07/2017
+				<a class="news news--communiques" href="#">
+					<div class="news_border">
+						<svg class="icon-pdf">
+							<use xlink:href="#icon-pdf"></use>
+						</svg>
+						<p>
+							Télécharger
 						</p>
 					</div>
-					<h2 class="news_title">
-						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
-					</h2>
-					<p class="news_txt">
-						.PDF - 364 KB
-					</p>
-				</div>
-			</a>
-
-			<a class="news news--communiques" href="#">
-				<div class="news_border">
-					<svg class="icon-pdf"><use xlink:href="#icon-pdf"></use></svg>
-					<p>
-						Télécharger
-					</p>
-				</div>
-				<div class="news_content">
-					<div class="news_date clearfix">
-						<p class="publication">
-							20/07/2017
+					<div class="news_content">
+						<div class="news_date clearfix">
+							<p class="publication">
+								20/07/2017
+							</p>
+						</div>
+						<h2 class="news_title">
+							Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
+						</h2>
+						<p class="news_txt">
+							.PDF - 364 KB
 						</p>
 					</div>
-					<h2 class="news_title">
-						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
-					</h2>
-					<p class="news_txt">
-						.PDF - 364 KB
-					</p>
-				</div>
-			</a>
+				</a>
 
-			<button type="button" class="d-block m-auto btn btn--primary btn--orange text-uppercase">
-				CONSULTER TOUTES LES STORIES
-			</button>
+
+				<a class="news news--communiques" href="#">
+					<div class="news_border">
+						<svg class="icon-pdf">
+							<use xlink:href="#icon-pdf"></use>
+						</svg>
+						<p>
+							Télécharger
+						</p>
+					</div>
+					<div class="news_content">
+						<div class="news_date clearfix">
+							<p class="publication">
+								20/07/2017
+							</p>
+						</div>
+						<h2 class="news_title">
+							Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
+						</h2>
+						<p class="news_txt">
+							.PDF - 364 KB
+						</p>
+					</div>
+				</a>
+
+				<a class="news news--communiques" href="#">
+					<div class="news_border">
+						<svg class="icon-pdf">
+							<use xlink:href="#icon-pdf"></use>
+						</svg>
+						<p>
+							Télécharger
+						</p>
+					</div>
+					<div class="news_content">
+						<div class="news_date clearfix">
+							<p class="publication">
+								20/07/2017
+							</p>
+						</div>
+						<h2 class="news_title">
+							Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
+						</h2>
+						<p class="news_txt">
+							.PDF - 364 KB
+						</p>
+					</div>
+				</a>
+
+				<a class="news news--communiques" href="#">
+					<div class="news_border">
+						<svg class="icon-pdf">
+							<use xlink:href="#icon-pdf"></use>
+						</svg>
+						<p>
+							Télécharger
+						</p>
+					</div>
+					<div class="news_content">
+						<div class="news_date clearfix">
+							<p class="publication">
+								20/07/2017
+							</p>
+						</div>
+						<h2 class="news_title">
+							Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
+						</h2>
+						<p class="news_txt">
+							.PDF - 364 KB
+						</p>
+					</div>
+				</a>
+
+			</div>
+			<div class="text-center">
+				<a href="#" id="more-communiques" class="btn btn--orange btn--primary btn--plus btn--afficher text-uppercase">
+					CONSULTER TOUTES LES STORIES
+				</a>
+			</div>
 
 			<div class="mt-md-10 mt-4">
 				<p class="title title--small text-center">
@@ -477,6 +546,7 @@
 			</div>
 
 			<div class="card-slider-wrapper owl-carousel mt-2">
+				<!-- Card -->
 				<a class="card card--slider" href="#">
 					<div class="card_info clearfix">
 						<img src="assets/img/telquel.png" alt="">
@@ -494,6 +564,7 @@
 						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
 					</div>
 				</a>
+				<!-- Card -->
 				<a class="card card--slider" href="#">
 					<div class="card_info clearfix">
 						<img src="assets/img/telquel.png" alt="">
@@ -511,6 +582,7 @@
 						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
 					</div>
 				</a>
+				<!-- Card -->
 				<a class="card card--slider" href="#">
 					<div class="card_info clearfix">
 						<img src="assets/img/telquel.png" alt="">
@@ -528,6 +600,7 @@
 						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
 					</div>
 				</a>
+				<!-- Card -->
 				<a class="card card--slider" href="#">
 					<div class="card_info clearfix">
 						<img src="assets/img/telquel.png" alt="">
@@ -545,6 +618,7 @@
 						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
 					</div>
 				</a>
+				<!-- Card -->
 				<a class="card card--slider" href="#">
 					<div class="card_info clearfix">
 						<img src="assets/img/telquel.png" alt="">
@@ -562,6 +636,7 @@
 						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
 					</div>
 				</a>
+				<!-- Card -->
 				<a class="card card--slider" href="#">
 					<div class="card_info clearfix">
 						<img src="assets/img/telquel.png" alt="">
@@ -579,6 +654,7 @@
 						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
 					</div>
 				</a>
+				<!-- Card -->
 				<a class="card card--slider" href="#">
 					<div class="card_info clearfix">
 						<img src="assets/img/telquel.png" alt="">
@@ -596,6 +672,7 @@
 						Le Groupe BCP lance la première banque marocaine dédiée à l’activité “titres”
 					</div>
 				</a>
+				<!-- Card -->
 				<a class="card card--slider" href="#">
 					<div class="card_info clearfix">
 						<img src="assets/img/telquel.png" alt="">
@@ -615,15 +692,8 @@
 				</a>
 			</div>
 
-			
-
-
 		</div>
 	</div>
-
-	
-
-	
 
 	<div class="footer clearfix">
 		<div class="footer_col">
@@ -861,6 +931,7 @@
 			</ul>
 		</div>
 	</div>
+	<!-- Footer -->
 	<div class="footer-bottom">
 		<div class="footer-bottom_icons">
 			<ul class="items clearfix">
@@ -931,6 +1002,7 @@
 			</p>
 		</div>
 	</div>
+
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
