@@ -268,7 +268,7 @@
                 </li>
                 <li class="item">
                     <a href="/gbp-front/homepage.html">
-                        Accueil 
+                        Accueil
                     </a>
                 </li>
                 <li class="item">
@@ -291,166 +291,99 @@
 
     <div class="bg-gray pb-6">
         <div class="container">
-
             <div class="wrapper d-flex flex-wrap align-items-center justify-content-between pt-3 pb-4">
                 <div class="tags">
-                    <a href="/gbp-front/actualites.html" class="btn btn--tag active mb-s mr-s">
+                    <a href="#" class="btn btn--tag mb-s mr-s active" id="mediacenter-filter-all">
                         TOUT
                     </a>
-                    <a href="/gbp-front/actualites.html" class="btn btn--tag mb-s mr-s">
-                        #INSTITUTIONNELLE
-                    </a>
-                    <a href="/gbp-front/actualites.html" class="btn btn--tag mb-s mr-s">
-                        #MAROCAINS DU MONDE
-                    </a>
-                    <a href="/gbp-front/actualites.html" class="btn btn--tag mb-s mr-s">
-                        #PROFESSIONNELS
-                    </a>
-                    <a href="/gbp-front/actualites.html" class="btn btn--tag mb-s mr-s">
-                        #PARTICULIERS
-                    </a>
-                    <a href="/gbp-front/actualites.html" class="btn btn--tag mb-s mr-s">
-                        #ENTREPRISES
-                    </a>
+                    <div style="display: inline" id="mediacenter-filters">
+                        <a href="#" class="btn btn--tag mb-s mr-s">
+                            #RSE
+                        </a>
+                        <a href="#" class="btn btn--tag mb-s mr-s">
+                            #DEVELOPPEMENT DURABLE
+                        </a>
+                        <a href="#" class="btn btn--tag mb-s mr-s">
+                            #ENTREPRENARIAT
+                        </a>
+                        <a href="#" class="btn btn--tag mb-s mr-s">
+                            #FINANCE
+                        </a>
+                    </div>
                 </div>
+                <div>
+                    <div class="select-filter d-flex align-items-center justify-content-end clearfix">
+                        <span class="title title--filter">
+                            Filtrez par
+                        </span>
+                        <select class="nice-select text-orange" id="mediacenter-select-filter">
+                            <option>Période</option>
+                            <option>Plus récents</option>
+                            <option>Plus anciens</option>
+                        </select>
+                    </div>
+                    <div class="date-filter clearfix d-flex align-items-center" id="date-filter">
+                    	<p class="date-filter_txt float-left">
+                    		Du
+                    	</p>
+                    	<div class="start clearfix">
+                    		<div class="date-filter_arrows">
+                    			<a href="#" class="increment-date">
+                    				<svg>
+                    					<use xlink:href="#arrow-right"></use>
+                    				</svg>
+                    			</a>
+                    			<a href="#" class="decrement-date">
+                    				<svg>
+                    					<use xlink:href="#arrow-right"></use>
+                    				</svg>
+                    			</a>
+                    		</div>
+                    		<p class="date-filter_month">
+                    			<input type="text" placeholder="--">
+                    		</p>
+                    		<p class="date-filter_year">
+                    			<input type="text" placeholder="----">
+                    		</p>
+                    	</div>
 
-                <div class="select-filter d-flex align-items-center clearfix">
-                    <span class="title title--filter">
-                        Filtrez par
-                    </span>
-                    <select class="nice-select text-orange">
-                        <option>Plus récents</option>
-                        <option>option</option>
-                    </select>
+                    	<p class="date-filter_txt float-left">
+                    		Au
+                    	</p>
+
+                    	<div class="end clearfix">
+                    		<div class="date-filter_arrows">
+                    			<a href="#" class="increment-date">
+                    				<svg>
+                    					<use xlink:href="#arrow-right"></use>
+                    				</svg>
+                    			</a>
+                    			<a href="#" class="decrement-date">
+                    				<svg>
+                    					<use xlink:href="#arrow-right"></use>
+                    				</svg>
+                    			</a>
+                    		</div>
+                    		<p class="date-filter_month">
+                    			<input type="text" placeholder="--">
+                    		</p>
+                    		<p class="date-filter_year">
+                    			<input type="text" placeholder="----">
+                    		</p>
+                    	</div>
+                    </div>
                 </div>
             </div>
 
             <div class="mt-8">
+                <div id="mediacenter-holder">
 
-                <!-- Media Card -->
-                <div class="media-card mt-8">
-                    <div class="row">
-                        <a class="col-md-5 media-card__imgside" href="/gbp-front/mediacenter-detail.html">
-                            <img class="media-card__img" src="assets/img/media-img.png" alt="media image">
-                        </a>
-                        <div class="col-md-7 media-card__contentside ">
-                            <div class="card-media__tag ">
-                                <a class="btn btn--tag btn--orange active" href="/gbp-front/mediacenter.html">
-                                    #INSTITUTIONNELLE
-                                </a>
-                            </div>
-                            <h2 class="media-card__title">HISTOIRES POPULAIRES</h2>
-                            <p class="media-card__content">
-                                La campagne “Histoires populaires” adopte une démarche encore plus proche des préoccupations des gens : ce sont des histoires
-                                réelles de Marocains issus de toutes les classes sociales et qui ont réussi à atteindre leurs objectifs dans
-                                différents secteurs de la vie grâce au soutien de leur banque.
-                            </p>
-                            <div class="media-card__footer">
-                                <div class="card-footer__metadata">
-                                    <strong class="card-footer__datetitle">Date de lancement</strong>
-                                    <span class="card-footer__date">02/04/2016</span>
-                                </div>
-                                <div class="card-footer__action">
-                                    <a href="/gbp-front/mediacenter-detail.html">DÉCOUVRIR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <!-- Media Card Reverse -->
-                <div class="media-card media-card--reverse my-8">
-                    <div class="row">
-                        <div class="col-md-7 media-card__contentside">
-                            <div class="card-media__tag ">
-                                <a class="btn btn--tag btn--orange active" href="/gbp-front/actualites.html">
-                                    #INSTITUTIONNELLE
-                                </a>
-                            </div>
-                            <h2 class="media-card__title">HISTOIRES POPULAIRES</h2>
-                            <p class="media-card__content">
-                                La campagne “Histoires populaires” adopte une démarche encore plus proche des préoccupations des gens : ce sont des histoires
-                                réelles de Marocains issus de toutes les classes sociales et qui ont réussi à atteindre leurs objectifs dans
-                                différents secteurs de la vie grâce au soutien de leur banque.
-                            </p>
-                            <div class="media-card__footer">
-                                <div class="card-footer__metadata">
-                                    <strong class="card-footer__datetitle">Date de lancement</strong>
-                                    <span class="card-footer__date">02/04/2016</span>
-                                </div>
-                                <div class="card-footer__action">
-                                    <a href="/gbp-front/mediacenter-detail.html">DÉCOUVRIR</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="col-md-5 media-card__imgside" href="/gbp-front/mediacenter-detail.html">
-                            <img class="media-card__img" src="assets/img/media-img.png" alt="media image">
-                        </a>
-                    </div>
+                <div class="text-center">
+                    <a href="#" id="more-mediacenter" class="btn btn--orange btn--primary btn--plus btn--afficher text-uppercase">
+                        afficher plus
+                    </a>
                 </div>
-                <!-- Media Card -->
-                <div class="media-card mt-8">
-                    <div class="row">
-                        <a class="col-md-5 media-card__imgside" href="/gbp-front/mediacenter-detail.html">
-                            <img class="media-card__img" src="assets/img/media-img.png" alt="media image">
-                        </a>
-                        <div class="col-md-7 media-card__contentside ">
-                            <div class="card-media__tag ">
-                                <a class="btn btn--tag btn--orange active" href="/gbp-front/mediacenter.html">
-                                    #INSTITUTIONNELLE
-                                </a>
-                            </div>
-                            <h2 class="media-card__title">HISTOIRES POPULAIRES</h2>
-                            <p class="media-card__content">
-                                La campagne “Histoires populaires” adopte une démarche encore plus proche des préoccupations des gens : ce sont des histoires
-                                réelles de Marocains issus de toutes les classes sociales et qui ont réussi à atteindre leurs objectifs dans
-                                différents secteurs de la vie grâce au soutien de leur banque.
-                            </p>
-                            <div class="media-card__footer">
-                                <div class="card-footer__metadata">
-                                    <strong class="card-footer__datetitle">Date de lancement</strong>
-                                    <span class="card-footer__date">02/04/2016</span>
-                                </div>
-                                <div class="card-footer__action">
-                                    <a href="/gbp-front/mediacenter-detail.html">DÉCOUVRIR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Media Card Reverse -->
-                <div class="media-card media-card--reverse my-8">
-                    <div class="row">
-                        <div class="col-md-7 media-card__contentside">
-                            <div class="card-media__tag ">
-                                <a class="btn btn--tag btn--orange active" href="/gbp-front/actualites.html">
-                                    #INSTITUTIONNELLE
-                                </a>
-                            </div>
-                            <h2 class="media-card__title">HISTOIRES POPULAIRES</h2>
-                            <p class="media-card__content">
-                                La campagne “Histoires populaires” adopte une démarche encore plus proche des préoccupations des gens : ce sont des histoires
-                                réelles de Marocains issus de toutes les classes sociales et qui ont réussi à atteindre leurs objectifs dans
-                                différents secteurs de la vie grâce au soutien de leur banque.
-                            </p>
-                            <div class="media-card__footer">
-                                <div class="card-footer__metadata">
-                                    <strong class="card-footer__datetitle">Date de lancement</strong>
-                                    <span class="card-footer__date">02/04/2016</span>
-                                </div>
-                                <div class="card-footer__action">
-                                    <a href="/gbp-front/mediacenter-detail.html">DÉCOUVRIR</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="col-md-5 media-card__imgside" href="/gbp-front/mediacenter-detail.html">
-                            <img class="media-card__img" src="assets/img/media-img.png" alt="media image">
-                        </a>
-                    </div>
-                </div>
-
-                <button type="button" class="d-block m-auto btn btn--primary btn--orange text-uppercase">
-                    CONSULTER TOUTES LES STORIES
-                </button>
             </div>
 
 
