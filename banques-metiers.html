@@ -12,111 +12,376 @@
 </head>
 
 <body>
+<!-- Search -->
+<div class="popup-search d-none">
+    <div class="close-wrapper">
+        <span>
+            <svg>
+                <use xlink:href="#icon-cross"></use>
+            </svg>
+        </span>
+    </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-7">
+
+                <form action="" class="popup-search_form">
+                    <input type="text" class="input input--popup" id="popup-search-input" placeholder="Rechercher">
+                    <div class="search-wrapper">
+                        <span>
+                            <svg>
+                                <use xlink:href="#icon-popup-search"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </form>
+
+                <div class="mt-2 text-center">
+                    <div class="btn btn--tag  mr-1 mb-1 active popup-search_tag--all">
+                        tous
+                    </div>
+                    <div class="btn btn--tag mr-1 mb-1 popup-search_tag">
+                        #articles
+                    </div>
+                    <div class="btn btn--tag mr-1 mb-1 popup-search_tag">
+                        #videos
+                    </div>
+                    <div class="btn btn--tag mr-1 mb-1 popup-search_tag">
+                        #images
+                    </div>
+                    <div class="btn btn--tag mr-1 mb-1 popup-search_tag">
+                        #documents
+                    </div>
+                </div>
+
+                <div class="popup-search_result">
+                    <div class="mt-4">
+                        <h2 class="popup-search_title">
+                            résultats de la recherche
+                        </h2>
+                    </div>
+
+                    <div class="mt-3">
+                        <div class="row">
+
+                            <div class="col-12 col-lg-3 col-md-4 mb-4">
+                                <div class="popup-menu" id="search-actualites">
+                                    <a class="popup-menu_title" href="/gbp-front/actualites.html">
+                                        actualites (
+                                        <span class="popup-menu_length">6</span>)
+                                    </a>
+                                    <ul class="popup-menu_list">
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="item item-plus" href="#">
+                                        > Voir Plus
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-3 col-md-4 mb-4">
+                                <div class="popup-menu" id="search-communiques">
+                                    <a class="popup-menu_title" href="/gbp-front/communiques.html">
+                                        communiqués (
+                                        <span class="popup-menu_length">6</span>)
+                                    </a>
+                                    <ul class="popup-menu_list">
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="item item-plus" href="/gbp-front/result.html">
+                                        > Voir Plus
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-3 col-md-4 mb-4">
+                                <div class="popup-menu" id="search-presse">
+                                    <a class="popup-menu_title" href="/gbp-front/presse.html">
+                                        presse (
+                                        <span class="popup-menu_length">6</span>)
+                                    </a>
+                                    <ul class="popup-menu_list">
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="item item-plus" href="/gbp-front/result.html">
+                                        > Voir Plus
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-3 col-md-4 mb-4">
+                                <div class="popup-menu" id="search-compagnes">
+                                    <a class="popup-menu_title" href="/gbp-front/mediacenter.html">
+                                        compagnes pub (
+                                        <span class="popup-menu_length">6</span>)
+                                    </a>
+                                    <ul class="popup-menu_list">
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="item item-plus" href="/gbp-front/result.html">
+                                        > Voir Plus
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-3 col-md-4 mb-4">
+                                <div class="popup-menu" id="search-rapports">
+                                    <a class="popup-menu_title" href="/gbp-front/finance.html">
+                                        rapports financiers (
+                                        <span class="popup-menu_length">6</span>)
+                                    </a>
+                                    <ul class="popup-menu_list">
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="item item-plus" href="/gbp-front/result.html">
+                                        > Voir Plus
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-3 col-md-4 mb-4">
+                                <div class="popup-menu" id="search-autres">
+                                    <a class="popup-menu_title" href="/gbp-front/autres.html">
+                                        autres (
+                                        <span class="popup-menu_length">6</span>)
+                                    </a>
+                                    <ul class="popup-menu_list">
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/gbp-front/news-detail.html">
+                                                Lorem ipsum dolor set amet
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a class="item item-plus" href="/gbp-front/result.html">
+                                        > Voir Plus
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
 <div class="page-content">
 	<!-- top header -->
 
 	<div class="top-header clearfix">
-	    <div class="top-header_list">
-	        <nav>
-	            <ul class="clearfix">
-	                <li class="list">
-	                    <a href="#">
-	                        <span>
-	                            Segments
-	                        </span>
+		<div class="top-header_list">
+			<nav>
+				<ul class="clearfix">
+					<li class="list">
+						<a href="#">
+							<span>
+								Segments
+							</span>
 
-	                        <svg class="icon icon-arrow-down">
-	                            <use xlink:href="#icon-arrow-down"></use>
-	                        </svg>
-	                    </a>
-	                    <ul class="dropdown d-none">
-	                        <li>
-	                            <a href="#">
-	                                option1
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="#">
-	                                option1
-	                            </a>
-	                        </li>
-	                    </ul>
-	                </li>
-	                <li class="list--tohide">
-	                    <a href="/gbp-front/appel-offres.html">
-	                        Appel D'offres
-	                    </a>
-	                </li>
-	                <li class="location">
-	                    <a href="#">
-	                        <svg class="icon icon-location">
-	                            <use xlink:href="#icon-location"></use>
-	                        </svg>
-	                    </a>
-	                </li>
-	                <li class="lang">
-	                    <a href="#">
-	                        <span>
-	                            FR
-	                        </span>
+							<svg class="icon icon-arrow-down">
+								<use xlink:href="#icon-arrow-down"></use>
+							</svg>
+						</a>
+						<ul class="dropdown d-none">
+							<li>
+								<a href="#">
+									option1
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									option1
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="list--tohide">
+						<a href="/gbp-front/appel-offres.html">
+							Appel D'offres
+						</a>
+					</li>
+					<li class="location">
+						<a href="#">
+							<svg class="icon icon-location">
+								<use xlink:href="#icon-location"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="lang">
+						<a href="#">
+							<span>
+								FR
+							</span>
 
-	                        <svg class="icon icon-arrow-down">
-	                            <use xlink:href="#icon-arrow-down"></use>
-	                        </svg>
+							<svg class="icon icon-arrow-down">
+								<use xlink:href="#icon-arrow-down"></use>
+							</svg>
 
 
-	                    </a>
-	                    <ul class="dropdown d-none">
-	                        <li>
-	                            <a href="/gbp-front/banques-metiers-ar.html">
-	                                AR
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="#">
-	                                EN
-	                            </a>
-	                        </li>
-	                    </ul>
-	                </li>
-	            </ul>
-	        </nav>
-	    </div>
-	    <div class="top-header_buttons">
-	        <nav>
-	            <ul class="clearfix">
-	                <li>
-	                    <a href="#">
-	                        <span>
-	                            <svg class="icon icon-user">
-	                                <use xlink:href="#icon-user"></use>
-	                            </svg>
-	                        </span>
+						</a>
+						<ul class="dropdown d-none">
+							<li>
+								<a href="/gbp-front/banques-metiers-ar.html">
+									AR
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									EN
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="top-header_buttons">
+			<nav>
+				<ul class="clearfix">
+					<li>
+						<a href="#">
+							<span>
+								<svg class="icon icon-user">
+									<use xlink:href="#icon-user"></use>
+								</svg>
+							</span>
 
-	                        <span>
-	                            Devenir client
-	                        </span>
+							<span>
+								Devenir client
+							</span>
 
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="#">
-	                        <span>
-	                            <svg class="icon icon-account">
-	                                <use xlink:href="#icon-account"></use>
-	                            </svg>
-	                        </span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>
+								<svg class="icon icon-account">
+									<use xlink:href="#icon-account"></use>
+								</svg>
+							</span>
 
-	                        <span>
-	                            Mon Compte
-	                        </span>
+							<span>
+								Mon Compte
+							</span>
 
-	                    </a>
-	                </li>
-	            </ul>
-	        </nav>
-	    </div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</div>
 
 	<!-- end top header -->
@@ -180,7 +445,7 @@
 					</a>
 				</li>
 				<li class="header_search">
-					<a href="#">
+					<a href="#" class="header_search-pop">
 						<svg class="icon-search">
 							<use xlink:href="#icon-search"></use>
 						</svg>
@@ -189,6 +454,7 @@
 			</ul>
 		</nav>
 	</div>
+	<!-- Help -->
 	<div class="besoin-aide">
 	    <span>
 			Besoin d'aide ?
@@ -247,50 +513,51 @@
 	<div class="header-section">
 		<img src="assets/img/appel-offre.png" alt="">
 		<div class="wrapper-absolute">
-	        <div class="container">
-		        <h1 class="header-section_title">
+			<div class="container">
+				<h1 class="header-section_title">
 					Banques et métiers
 				</h1>
-		        <p class="header-section_desc">
-		            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh tortor, viverra placerat luctus id, aliquet at nibh. Vivamus massa nibh, luctus id vestibulum in, pulvinar vitae nisl.
-		        </p>
-		    </div>
-	    </div>    
+				<p class="header-section_desc">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh tortor, viverra placerat luctus id, aliquet at nibh.
+					Vivamus massa nibh, luctus id vestibulum in, pulvinar vitae nisl.
+				</p>
+			</div>
+		</div>
 	</div>
 
 	<!-- Fil d'ariane -->
 
 	<div class="fil-ariane">
-	<div class="container">
-		<ul class="items clearfix">
-			<li class="item">
-				Vous êtes ici :
-			</li>
-			<li class="item">
-				<a href="/gbp-front/homepage.html">
-					Accueil
-				</a>
-			</li>
-			<li class="item">
-				<a href="/gbp-front/homepage.html">
-					Corporate
-				</a>
-			</li>
-			<li class="item">
-				Banques et métiers
-			</li>
-		</ul>
+		<div class="container">
+			<ul class="items clearfix">
+				<li class="item">
+					Vous êtes ici :
+				</li>
+				<li class="item">
+					<a href="/gbp-front/homepage.html">
+						Accueil
+					</a>
+				</li>
+				<li class="item">
+					<a href="/gbp-front/homepage.html">
+						Corporate
+					</a>
+				</li>
+				<li class="item">
+					Banques et métiers
+				</li>
+			</ul>
+		</div>
 	</div>
-</div>
 
 
-	
+
 
 	<!-- Banques et métiers -->
 
 	<div class="bg-gray pb-6 pt-3">
 		<div class="container">
-			
+
 			<div class="row mb-7">
 				<div class="col-12 col-lg-3 col-md-4 mb-lg-0 mb-2">
 					<!-- card -->
@@ -303,7 +570,7 @@
 
 						<div class="card_title">
 							<h2 class="first">
-								BANQUE 
+								BANQUE
 							</h2>
 							<h2 class="last">
 								DES PARTICULIERS
@@ -311,13 +578,13 @@
 						</div>
 
 						<p class="card_desc">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor leo. 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor leo.
 						</p>
 
 						<div class="card_link">
 							EN SAVOIR PLUS
 						</div>
-					
+
 					</a>
 				</div>
 				<div class="col-12 col-lg-3 col-md-4 mb-lg-0 mb-2">
@@ -331,7 +598,7 @@
 
 						<div class="card_title">
 							<h2 class="first">
-								BANQUE 
+								BANQUE
 							</h2>
 							<h2 class="last">
 								DES MAROCAINS DU MONDE
@@ -339,15 +606,15 @@
 						</div>
 
 						<p class="card_desc">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor leo. 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor leo.
 						</p>
 
 						<div class="card_link">
 							EN SAVOIR PLUS
 						</div>
-						
+
 					</a>
-					
+
 				</div>
 				<div class="col-12 col-lg-3 col-md-4 mb-lg-0 mb-2">
 					<!-- card -->
@@ -360,7 +627,7 @@
 
 						<div class="card_title">
 							<h2 class="first">
-								BANQUE 
+								BANQUE
 							</h2>
 							<h2 class="last">
 								des professionnels
@@ -368,15 +635,15 @@
 						</div>
 
 						<p class="card_desc">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor leo. 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor leo.
 						</p>
 
 						<div class="card_link">
 							EN SAVOIR PLUS
 						</div>
-						
+
 					</a>
-					
+
 				</div>
 				<div class="col-12 col-lg-3 col-md-4 mb-lg-0 mb-2">
 					<!-- card -->
@@ -389,7 +656,7 @@
 
 						<div class="card_title">
 							<h2 class="first">
-								BANQUE 
+								BANQUE
 							</h2>
 							<h2 class="last">
 								DES entreprises
@@ -397,17 +664,17 @@
 						</div>
 
 						<p class="card_desc">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor leo. 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in porttitor leo.
 						</p>
 
 						<div class="card_link">
 							EN SAVOIR PLUS
 						</div>
 					</a>
-					
+
 				</div>
 			</div>
-			
+
 			<p class="title title--small text-center">
 				METIERS
 			</p>
@@ -417,6 +684,7 @@
 			</h2>
 
 			<div class="mt-lg-6 mt-3">
+				<!-- CARD -->
 				<div class="card card--explorer card--explorer-right">
 					<img src="assets/img/explorer-metiers.png" alt="">
 
@@ -437,6 +705,7 @@
 						</a>
 					</div>
 				</div>
+				<!-- CARD -->
 				<div class="card card--explorer card--explorer-left">
 					<img src="assets/img/explorer-metiers2.png" alt="">
 
@@ -457,6 +726,7 @@
 						</a>
 					</div>
 				</div>
+				<!-- CARD -->
 				<div class="card card--explorer card--explorer-right">
 					<img src="assets/img/explorer-metiers.png" alt="">
 
@@ -477,6 +747,7 @@
 						</a>
 					</div>
 				</div>
+				<!-- CARD -->
 				<div class="card card--explorer card--explorer-left">
 					<img src="assets/img/explorer-metiers2.png" alt="">
 
@@ -498,11 +769,11 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 
-	
+
 
 	<div class="footer clearfix">
 		<div class="footer_col">
@@ -740,6 +1011,7 @@
 			</ul>
 		</div>
 	</div>
+	<!-- Bottom -->
 	<div class="footer-bottom">
 		<div class="footer-bottom_icons">
 			<ul class="items clearfix">

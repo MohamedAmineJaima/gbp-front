@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
 <div class="page-content">
     <!-- Top header -->
     <div class="top-header clearfix">
@@ -179,8 +178,8 @@
                 </li>
                 <li class="header_search">
                     <div class="search_holder">
-                        <input type="text" name="" class="search_input" id="">
-                        <a href="#">
+                        <input type="text" name="" class="search_input" id="result-search">
+                        <a href="#" id="result-search-btn">
                             <svg class="icon-search">
                                 <use xlink:href="#icon-search"></use>
                             </svg>
@@ -252,7 +251,7 @@
             <div class="container">
                 <h1 class="header-section_title">
                     Résultat de ‘
-                    <span>Populaire </span>
+                    <span class="header-section_search-result">Populaire </span>
                     ’
                 </h1>
             </div>
@@ -269,24 +268,23 @@
                         <span class="title--tags">
                             Résultat par
                         </span>
-                        <a href="#" class="btn btn--tag active mb-s mr-s">
+                        <a href="#" class="btn btn--tag mb-s mr-s active" id="result-filter-all">
                             TOUT
                         </a>
-                        <a href="#" class="btn btn--tag mb-s mr-s">
-                            #INSTITUTIONNELLE
-                        </a>
-                        <a href="#" class="btn btn--tag mb-s mr-s">
-                            #MAROCAINS DU MONDE
-                        </a>
-                        <a href="#" class="btn btn--tag mb-s mr-s">
-                            #PROFESSIONNELS
-                        </a>
-                        <a href="#" class="btn btn--tag mb-s mr-s">
-                            #PARTICULIERS
-                        </a>
-                        <a href="#" class="btn btn--tag mb-s mr-s">
-                            #ENTREPRISES
-                        </a>
+                        <div style="display: inline" id="result-filters">
+                            <a href="#" class="btn btn--tag mb-s mr-s">
+                                #RSE
+                            </a>
+                            <a href="#" class="btn btn--tag mb-s mr-s">
+                                #DEVELOPPEMENT DURABLE
+                            </a>
+                            <a href="#" class="btn btn--tag mb-s mr-s">
+                                #ENTREPRENARIAT
+                            </a>
+                            <a href="#" class="btn btn--tag mb-s mr-s">
+                                #FINANCE
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-2">
@@ -294,9 +292,9 @@
                         <span class="title title--filter">
                             Type
                         </span>
-                        <select class="nice-select text-orange">
+                        <select class="nice-select text-orange" id="result-select-type">
                             <option>Documents</option>
-                            <option>Documents</option>
+                            <option>Articles</option>
                         </select>
                     </div>
                 </div>
@@ -310,7 +308,7 @@
                 <p class="search-result_subtitle title--small">RECHERCHE</p>
                 <h3 class="search-result_title title--bloc-bold">ACTUALITÉS</h3>
                 <div class="search-result_slider mt-3">
-                    <div class="actualite-slider owl-carousel">
+                    <div class="actualite-slider owl-carousel" id="result-acualites-holder">
                         <!-- Card -->
                         <div class="item" data-merge="2">
                             <div class="card card--actualites card--actualites-img clearfix">
